@@ -1,0 +1,8 @@
+
+
+<div  class="claseHijo1">
+  <p>El hijo1 recibe el mensaje del padre {{mensajeParaHijo1}}</p>
+  <input type="text" [(ngModel)]="mensajeDeHijoParaPadre" (keyup)="enviarMensaje()" />
+  <button (click)="generarNumero()">Generar Numero</button>
+  <p>El numero generado es {{numero}}</p>
+</div>
