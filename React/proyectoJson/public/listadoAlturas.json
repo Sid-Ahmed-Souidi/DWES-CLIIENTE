@@ -1,0 +1,22 @@
+[
+    {
+        "provincia": "Provincia1",
+        "altura": 2800,
+        "alturaMinima": 200
+    },
+    {
+        "provincia": "Provincia2",
+        "altura": 1500,
+        "alturaMinima": 0
+    },
+    {
+        "provincia": "Provincia3",
+        "altura": 3200,
+        "alturaMinima": 50
+    },
+    {
+        "provincia": "Provincia4",
+        "altura": 900,
+        "alturaMinima": 0
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "provincia": "Provincia1",
+        "votosPA": 1200,
+        "votosPB": 800,
+        "votosPC": 1500,
+        "votosPD": 600,
+        "escanos": 10
+    },
+    {
+        "provincia": "Provincia2",
+        "votosPA": 300,
+        "votosPB": 700,
+        "votosPC": 500,
+        "votosPD": 400,
+        "escanos": 5
+    },
+    {
+        "provincia": "Provincia3",
+        "votosPA": 900,
+        "votosPB": 1200,
+        "votosPC": 1300,
+        "votosPD": 1000,
+        "escanos": 8
+    }
+]

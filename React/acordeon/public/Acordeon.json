@@ -1,0 +1,14 @@
+[
+    {
+      "pregunta": "¿Qué es React?",
+      "respuesta": "React es una biblioteca de JavaScript para construir interfaces de usuario. Permite crear aplicaciones web interactivas de manera eficiente."
+    },
+    {
+      "pregunta": "¿Cómo instalo React?",
+      "respuesta": "Puedes instalar React utilizando npm o yarn. Ejecuta 'npx create-react-app nombre-del-proyecto' para crear un nuevo proyecto de React."
+    },
+    {
+      "pregunta": "¿Qué es el estado en React?",
+      "respuesta": "El estado en React es un objeto que representa los datos de una aplicación en un momento dado. Puedes actualizar el estado usando el hook useState."
+    }
+  ]

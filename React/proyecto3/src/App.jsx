@@ -3,6 +3,7 @@ import './App.css'
 import Hijo from './Hijo'
 
 function App() {
+  
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
 
@@ -17,7 +18,6 @@ function App() {
   return (
     <>
     <h1>Calculadora</h1>
-
     <div className='app'>
     <div className='numeros'>
     <legend>Introduce los numeros</legend>

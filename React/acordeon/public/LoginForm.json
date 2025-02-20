@@ -1,0 +1,19 @@
+{
+    "loginForm": {
+      "email": {
+        "label": "Correo Electrónico",
+        "type": "email",
+        "placeholder": "Introduce tu correo electrónico",
+        "required": true
+      },
+      "password": {
+        "label": "Contraseña",
+        "type": "password",
+        "placeholder": "Introduce tu contraseña",
+        "required": true
+      },
+      "submit": {
+        "label": "Iniciar sesión"
+      }
+    }
+  }
