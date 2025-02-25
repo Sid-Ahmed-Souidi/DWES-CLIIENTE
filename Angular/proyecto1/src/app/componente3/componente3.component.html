@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- La expresión {{ activado ? 'Parar' : 'Generar imágenes' }}
+      es el operador condicional ternario en Angular (en realidad, es JavaScript 
+      dentro de la interpolación de Angular). Su funcionamiento es:
+    Si activado es true: Muestra la palabra "Parar".
+    Si activado es false: Muestra la palabra "Generar imágenes" -->
+
+    <button  (click)="generarImagenes()">{{ activado ? 'Parar' : 'Generar imágenes' }}</button>
+    <!-- <button  (click)="parar()">Parar</button> -->
+        <img src="{{imagen}}" [width]="width" [height]="height"  alt="">
+    
+</body>
+</html>

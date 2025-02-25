@@ -21,10 +21,10 @@
 
   <div class="container">
     <div class="col-3">
-      <button class="btn btn-primary" (click)="cambiarColorAleatorio()" [ngStyle]="{'background-color': color}">Botón 1</button>
-      <button class="btn btn-primary" (click)="cambiarColorAleatorio()" [ngStyle]="{'background-color': color}">Botón 2</button>
-      <button class="btn btn-primary" (click)="cambiarColorAleatorio()" [ngStyle]="{'background-color': color}">Botón 3</button>
-      <button class="btn btn-primary" (click)="cambiarColorAleatorio()" [ngStyle]="{'background-color': color}">Botón 4</button>
+      <div  style="background-color: aqua;">numero de segundos->{{contador}}</div>
+      <button class="btn btn-primary" (click)="reanudar()">reanudar</button>
+      <button class="btn btn-primary" (click)="resetear()">resetear</button>
+      <button class="btn btn-primary" (click)="parar()">parar</button>
     </div>
   </div>
 
