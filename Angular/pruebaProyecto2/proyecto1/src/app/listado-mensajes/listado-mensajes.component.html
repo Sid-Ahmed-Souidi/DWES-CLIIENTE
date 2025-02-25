@@ -1,0 +1,7 @@
+<table border="1">
+  <tr><th>ID</th><th>Mensaje</th></tr>
+  <tr *ngFor="let mensaje of mensajes">
+    <td>{{ mensaje.id }}</td>
+    <td>{{ mensaje.mensaje }}</td>
+  </tr>
+</table>

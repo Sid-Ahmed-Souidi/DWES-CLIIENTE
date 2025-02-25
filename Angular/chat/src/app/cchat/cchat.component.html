@@ -1,0 +1,91 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="row mb-4 justify-content-center">
+        <div class="col-auto">
+          <button class="btn btn-primary" (click)="elegirServ1()">
+            {{ textoBotonS1 }}
+          </button>
+          <button class="btn btn-secondary ms-2" (click)="elegirServ2()">
+            {{ textoBotonS2 }}
+          </button>
+          <button class="btn btn-warning ms-2" (click)="elegirServ3()">
+            {{ textoBotonS3 }}
+          </button>
+        </div>
+      </div>
+      <form #f="ngForm" class="border p-4 rounded bg-light shadow">
+        <div class="mb-3">
+          <label for="usuario" class="form-label">Usuario</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            class="form-control"
+            [(ngModel)]="mensajeSeleccionado.usuario"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <input
+            type="text"
+            id="mensaje"
+            name="mensaje"
+            class="form-control"
+            [(ngModel)]="mensajeSeleccionado.mensaje"
+          />
+        </div>
+        <div class="form-group d-flex justify-content-between">
+          <button
+            type="button"
+            class="btn btn-success"
+            (click)="leerMensajes()"
+          >
+            Obtener Mensajes
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="escribirMensajes(f)"
+          >
+            Añadir Mensaje
+          </button>
+
+          <button class="btn btn-danger" (click)="eliminarTodo()">
+            Borrar Todo Servidor
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Tabla para mostrar los mensajes -->
+    <div class="col-lg-8">
+      <table class="table table-striped table-bordered shadow">
+        <thead class="thead-dark text-center bg-dark text-light">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Mensaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mensaje of mensjaes" class="text-center">
+            <td>{{ mensaje.id }}</td>
+            <td>{{ mensaje.usuario }}</td>
+            <td>{{ mensaje.fecha }}</td>
+            <td>{{ mensaje.mensaje }}</td>
+            <td>
+              <button
+                class="btn btn-danger"
+                (click)="eliminarPorId(mensaje.id)"
+              >
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

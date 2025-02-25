@@ -1,0 +1,24 @@
+<h2>Cadiz</h2>
+<ul>
+  <li *ngFor="let ciudad of ciudades">
+    {{ ciudad.nombre }} - Habitantes: {{ ciudad.habitantes }}, Superficie: {{ ciudad.superficie }} km²
+  </li>
+</ul>
+<!-- # Componentes principales
+ng generate module andalucia --route andalucia --module app.module
+ng generate module extremadura --route extremadura --module app.module
+ng generate module castilla-leon --route castilla-leon --module app.module
+
+# Componentes secundarios para Andalucía
+ng generate module andalucia/huelva --route huelva --module andalucia/andalucia.module
+ng generate module andalucia/sevilla --route sevilla --module andalucia/andalucia.module
+ng generate module andalucia/cadiz --route cadiz --module andalucia/andalucia.module
+
+# Componentes secundarios para Extremadura
+ng generate module extremadura/caceres --route caceres --module extremadura/extremadura.module
+ng generate module extremadura/badajoz --route badajoz --module extremadura/extremadura.module
+
+# Componentes secundarios para Castilla y León
+ng generate module castilla-leon/salamanca --route salamanca --module castilla-leon/castilla-leon.module
+ng generate module castilla-leon/avila --route avila --module castilla-leon/castilla-leon.module
+ng generate module castilla-leon/valladolid --route valladolid --module castilla-leon/castilla-leon.module -->
